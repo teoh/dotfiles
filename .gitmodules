@@ -1,3 +1,6 @@
 [submodule ".tmux/plugins/tpm"]
 	path = .tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm.git
+[submodule ".tmux/plugins/tmux_mode_indicator"]
+	path = .tmux/plugins/tmux_mode_indicator
+	url = https://github.com/dominikduda/tmux_mode_indicator.git
