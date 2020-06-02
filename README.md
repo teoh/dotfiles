@@ -24,6 +24,7 @@ source ~/.bashrc
 echo ".dotfiles.git" >> .gitignore
 git clone --bare https://www.github.com/teoh/dotfiles.git ~/.dotfiles.git
 dotfiles checkout
+dotfiles submodule update --init --recursive
 dotfiles config --local status.showUntrackedFiles no
 ```
 1. Create alias to ensure that the git bare repository works without problem.
