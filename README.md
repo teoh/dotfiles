@@ -1,5 +1,6 @@
 # dotfiles
 Taken from : https://harfangk.github.io/2016/09/18/manage-dotfiles-with-a-git-bare-repository.html
+Also, see https://shapeshed.com/vim-packages/ 
 
 # Setup
 Git is the only dependency. The following four lines will set up the bare repository.
@@ -24,6 +25,7 @@ source ~/.bashrc
 echo ".dotfiles.git" >> .gitignore
 git clone --bare https://www.github.com/teoh/dotfiles.git ~/.dotfiles.git
 dotfiles checkout
+dotfiles submodule update --init --recursive
 dotfiles config --local status.showUntrackedFiles no
 ```
 1. Create alias to ensure that the git bare repository works without problem.
