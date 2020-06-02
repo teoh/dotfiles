@@ -15,23 +15,14 @@ dotfiles config --local status.showUntrackedFiles no
 1. Reload the shell setting.
 1. Prevent untracked files from showing up when we call dotfiles status.
 
-That finishes the setup. Use the aliased command from the home directory to manage files, and use git remote repo if you want to manage the files online.
-```
-dotfiles status
-dotfiles add .vimrc
-dotfiles commit -m "Add vimrc"
-dotfiles remote add origin https://www.github.com/username/repo.git
-dotfiles push origin master
-```
-
 # Installing dotfiles to another system
 It just needs two shell commands before fetching the remote repo.
 
 ```
-echo 'alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"' >> $HOME/.zshrc
-source ~/.zshrc
+echo 'alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"' >> $HOME/.bashrc
+source ~/.bashrc
 echo ".dotfiles.git" >> .gitignore
-git clone --bare https://www.github.com/username/repo.git $HOME/.dotfiles.git
+git clone --bare https://www.github.com/teoh/dotfiles.git ~/.dotfiles.git
 dotfiles checkout
 dotfiles config --local status.showUntrackedFiles no
 ```
