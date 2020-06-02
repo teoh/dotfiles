@@ -1,0 +1,97 @@
+" Source a few other files
+set runtimepath+=~/.vim/my_configs
+source ~/.vim/my_configs/basic.vim
+source ~/.vim/my_configs/filetypes.vim
+source ~/.vim/my_configs/plugins_config.vim
+" source ~/.vim/coc-config.vim
+
+" Key mappings
+
+" vim asterisk dont jump to next word
+nnoremap * *``
+
+" So we don't have to press shift when we want to get into command mode.
+nnoremap ; :
+vnoremap ; :
+
+" Use kj as the Escape key
+inoremap kj <Esc>
+
+" ctags
+command! MakeTags !ctags -R .
+
+" Tabs
+set guioptions+=e
+" Switch to last-active tab
+if !exists('g:Lasttab')
+    let g:Lasttab = 1
+    let g:Lasttab_backup = 1
+endif
+autocmd! TabLeave * let g:Lasttab_backup = g:Lasttab | let g:Lasttab = tabpagenr()
+autocmd! TabClosed * let g:Lasttab = g:Lasttab_backup
+nmap <silent> <Leader>; :exe "tabn " . g:Lasttab<cr>
+
+" move among buffers with CTRL
+" map <C-K> :bnext<CR>
+" map <C-J> :bprev<CR>
+
+" move among tabs with CTRL
+" map <C-l> :tabnext<CR>
+" map <C-h> :tabprevious<CR>
+
+" switch buffers without saving
+:set hidden
+
+" remove that annoying comment new line thing
+au FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+" delete buffers while being able to look at them
+:nnoremap <leader>lsd :ls<cr>:bd<space>
+
+" line numbers and stuff
+set nu rnu
+
+" Mouse things
+set mouse=a
+
+" Search things
+set shortmess-=S
+
+" Python line length limit (will have to change for other langs)
+set colorcolumn=79
+
+" Highlight where cursor is
+set cursorline    " highlight current line
+set cursorcolumn  " highlight current column
+
+" Python debugging stuff 
+map <Leader>fi oimport ipdb; ipdb.set_trace()<ESC>
+map <Leader>f oimport pdb; pdb.set_trace()<ESC>
+:command! RmBreakpoints g/import ipdb; ipdb.set_trace()\|import pdb; pdb.set_trace()/d
+
+" Git stuff
+function! GithubRepoPath()
+    " return join(["https://github.com/brain", fnamemodify(fugitive#repo()["tree"](),":t"), "tree", fugitive#head(), @%], '/')
+    return join(["github.com/brain", fnamemodify(fugitive#repo()["tree"](),":t"), "tree", "master", @%], '/')
+endfunction
+:command! GhubPath echo GithubRepoPath()
+:command! GhubLinePath echo join([GithubRepoPath(), "#L", line(".")], '')
+
+" source vimrc without typing goddamn everything
+:command! SourceVimrc source ~/.vim/vimrc
+
+" Vertical bar split stuff
+set fillchars+=vert:│
+hi VertSplit ctermbg=NONE guibg=NONE
+
+" visual-at, taken from https://github.com/stoeffel/.dotfiles/blob/master/vim/vimrc
+xnoremap @ :<C-u>call ExecuteMacroOverVisualRange()<CR>
+
+function! ExecuteMacroOverVisualRange()
+  echo "@".getcmdline()
+  execute ":'<,'>normal @".nr2char(getchar())
+endfunction
+
+" fold stuff
+set foldlevelstart=20
+set foldmethod=indent
