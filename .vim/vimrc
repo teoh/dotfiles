@@ -3,7 +3,7 @@ set runtimepath+=~/.vim/my_configs
 source ~/.vim/my_configs/basic.vim
 source ~/.vim/my_configs/filetypes.vim
 source ~/.vim/my_configs/plugins_config.vim
-" source ~/.vim/coc-config.vim
+source ~/.vim/my_configs/coc-config.vim
 
 " Key mappings
 
