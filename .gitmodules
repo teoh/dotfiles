@@ -4,3 +4,12 @@
 [submodule ".tmux/plugins/tmux_mode_indicator"]
 	path = .tmux/plugins/tmux_mode_indicator
 	url = https://github.com/dominikduda/tmux_mode_indicator.git
+[submodule ".vim/pack/my-plugins/start/ack.vim"]
+	path = .vim/pack/my-plugins/start/ack.vim
+	url = https://github.com/mileszs/ack.vim.git
+[submodule ".vim/pack/my-plugins/start/any-jump.vim"]
+	path = .vim/pack/my-plugins/start/any-jump.vim
+	url = https://github.com/pechorin/any-jump.vim.git
+[submodule ".vim/pack/my-plugins/start/auto-pairs"]
+	path = .vim/pack/my-plugins/start/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs.git
