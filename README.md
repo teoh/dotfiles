@@ -36,3 +36,12 @@ dotfiles config --local status.showUntrackedFiles no
 1. Check if it works fine.
 1. If you already have configuration files with identical names, checkout will fail. Back up and remove those files. Skip back up if you don’t need them.
 1. Prevent untracked files from showing up on dotfiles status.
+
+# Adding a new plugin as a submodule
+```
+cd .vim/pack/my-plugins/start/
+git clone <your-new-plugin>
+cd <your-new-plugin>
+dotfiles submodule add $(git config --get remote.origin.url) .
+# commit and push
+ ```
