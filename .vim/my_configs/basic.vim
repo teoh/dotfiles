@@ -229,8 +229,8 @@ map <leader>ba :bufdo bd<cr>
 " map <leader>h :bprevious<cr>
 " map <leader>l :tabnext<cr>
 " map <leader>h :tabprevious<cr>
-map <C-b> :tabnext<cr>
 map <C-v> :tabprevious<cr>
+map <C-m> :tabnext<cr>
 
 " Useful mappings for managing tabs
 map <leader>tn :tabnew<cr>

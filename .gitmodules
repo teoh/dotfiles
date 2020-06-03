@@ -40,3 +40,6 @@
 [submodule ".vim/pack/my-plugins/start/vim-zoom"]
 	path = .vim/pack/my-plugins/start/vim-zoom
 	url = https://github.com/dhruvasagar/vim-zoom.git
+[submodule ".vim/pack/my-plugins/start/vim-surround"]
+	path = .vim/pack/my-plugins/start/vim-surround
+	url = https://github.com/tpope/vim-surround.git
