@@ -95,7 +95,10 @@ let g:any_jump_ignored_files = ['*.tmp', '*.temp', '*csv', '*tsv', '*.txt', '*.l
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Fugitive
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set diffopt+=vertical
+if &diff
+    set diffopt-=internal
+    set diffopt+=vertical
+endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Goyo
