@@ -43,3 +43,6 @@
 [submodule ".vim/pack/my-plugins/start/vim-surround"]
 	path = .vim/pack/my-plugins/start/vim-surround
 	url = https://github.com/tpope/vim-surround.git
+[submodule ".vim/pack/my-plugins/start/flake8-vim"]
+	path = .vim/pack/my-plugins/start/flake8-vim
+	url = https://github.com/andviro/flake8-vim.git
