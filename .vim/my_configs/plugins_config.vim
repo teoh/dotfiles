@@ -52,11 +52,14 @@ nnoremap <silent> <leader>d :GitGutterToggle<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Command-T/CtrlP
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-map tt <Plug>(CommandT)
-map tf :CommandTFlush<CR>
-map tb <Plug>(CommandTBuffer)
-let g:CommandTScanDotDirectories=1
-let g:CommandTAcceptSelectionSplitMap='<C-f>'
+" map tt <Plug>(CommandT)
+" map tf :CommandTFlush<CR>
+" map tb <Plug>(CommandTBuffer)
+" let g:CommandTScanDotDirectories=1
+" let g:CommandTAcceptSelectionSplitMap='<C-f>'
+map tt :CtrlP<CR>
+map tf :CtrlPClearCache<CR>
+map tb :CtrlPBuffer<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Startify
@@ -98,4 +101,10 @@ set diffopt+=vertical
 " => Goyo
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <leader>z :Goyo<cr>
+let g:goyo_width=120
 autocmd VimLeavePre * Goyo!
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Flake8-vim
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:PyFlakeCheckers = 'flake8'

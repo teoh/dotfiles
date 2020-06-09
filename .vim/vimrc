@@ -65,6 +65,7 @@ set cursorline    " highlight current line
 set cursorcolumn  " highlight current column
 
 " Python debugging stuff 
+map <Leader>fr ofrom celery.contrib import rdb; rdb.set_trace()<ESC>
 map <Leader>fi oimport ipdb; ipdb.set_trace()<ESC>
 map <Leader>f oimport pdb; pdb.set_trace()<ESC>
 :command! RmBreakpoints g/import ipdb; ipdb.set_trace()\|import pdb; pdb.set_trace()/d
