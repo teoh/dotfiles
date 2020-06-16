@@ -49,3 +49,12 @@
 [submodule ".vim/pack/my-plugins/start/commentary"]
 	path = .vim/pack/my-plugins/start/commentary
 	url = https://tpope.io/vim/commentary.git
+[submodule ".vim/pack/my-plugins/start/rainbow_csv"]
+	path = .vim/pack/my-plugins/start/rainbow_csv
+	url = https://github.com/mechatroner/rainbow_csv.git
+[submodule ".vim/pack/my-plugins/start/vim-python-pep8-indent"]
+	path = .vim/pack/my-plugins/start/vim-python-pep8-indent
+	url = https://github.com/Vimjas/vim-python-pep8-indent.git
+[submodule ".vim/pack/my-plugins/start/vim-signature"]
+	path = .vim/pack/my-plugins/start/vim-signature
+	url = https://github.com/kshenoy/vim-signature.git
