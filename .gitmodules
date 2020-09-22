@@ -58,3 +58,6 @@
 [submodule ".vim/pack/my-plugins/start/vim-signature"]
 	path = .vim/pack/my-plugins/start/vim-signature
 	url = https://github.com/kshenoy/vim-signature.git
+[submodule ".vim/pack/my-plugins/start/vim-sneak"]
+	path = .vim/pack/my-plugins/start/vim-sneak
+	url = git://github.com/justinmk/vim-sneak.git
