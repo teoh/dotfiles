@@ -8,7 +8,10 @@ source ~/.vim/my_configs/coc-config.vim
 " Key mappings
 
 " vim asterisk dont jump to next word
-nnoremap * *``
+" nnoremap * *``
+nnoremap * *N
+" nnoremap * :keepjumps normal! *``<cr>
+" nnoremap * :keepjumps normal! mi*`i<CR>`
 
 " So we don't have to press shift when we want to get into command mode.
 nnoremap ; :
@@ -68,7 +71,7 @@ set cursorcolumn  " highlight current column
 map <Leader>fr ofrom celery.contrib import rdb; rdb.set_trace()<ESC>
 map <Leader>fi oimport ipdb; ipdb.set_trace()<ESC>
 map <Leader>f oimport pdb; pdb.set_trace()<ESC>
-:command! RmBreakpoints g/import ipdb; ipdb.set_trace()\|import pdb; pdb.set_trace()/d
+:command! RmBreakpoints g/import ipdb; ipdb.set_trace()\|import pdb; pdb.set_trace()\|from celery.contrib import rdb; rdb.set_trace()/d
 
 " Git stuff
 function! GithubRepoPath()

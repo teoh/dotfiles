@@ -144,9 +144,20 @@ endif
 "     colorscheme peaksea
 " catch
 " endtry
-colo seoul256
-let g:seoul256_background = 233
-set background=dark
+" colo seoul256
+" let g:seoul256_background = 233
+" set background=dark
+function LightModeSeoul()
+    let g:seoul256_background = 252 
+    colo seoul256
+endfunction
+function DarkModeSeoul()
+    let g:seoul256_background = 233
+    colo seoul256
+endfunction
+command! LightModeSeoul call LightModeSeoul()
+command! DarkModeSeoul call DarkModeSeoul()
+call DarkModeSeoul()
 
 " Set extra options when running in GUI mode
 if has("gui_running")
