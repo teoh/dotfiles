@@ -32,7 +32,7 @@ if !exists('g:Lasttab')
 endif
 autocmd! TabLeave * let g:Lasttab_backup = g:Lasttab | let g:Lasttab = tabpagenr()
 autocmd! TabClosed * let g:Lasttab = g:Lasttab_backup
-nmap <silent> <Leader>; :exe "tabn " . g:Lasttab<cr>
+nmap <silent> <Leader>, :exe "tabn " . g:Lasttab<cr>
 
 " move among buffers with CTRL
 " map <C-K> :bnext<CR>
