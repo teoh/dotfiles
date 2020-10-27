@@ -61,3 +61,9 @@
 [submodule ".vim/pack/my-plugins/start/vim-sneak"]
 	path = .vim/pack/my-plugins/start/vim-sneak
 	url = git://github.com/justinmk/vim-sneak.git
+[submodule ".tmux/plugins/tmux-pain-control"]
+	path = .tmux/plugins/tmux-pain-control
+	url = https://git::@github.com/tmux-plugins/tmux-pain-control
+[submodule ".tmux/plugins/tmux-sensible"]
+	path = .tmux/plugins/tmux-sensible
+	url = https://git::@github.com/tmux-plugins/tmux-sensible
