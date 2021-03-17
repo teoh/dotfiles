@@ -67,3 +67,6 @@
 [submodule ".tmux/plugins/tmux-sensible"]
 	path = .tmux/plugins/tmux-sensible
 	url = https://git::@github.com/tmux-plugins/tmux-sensible
+[submodule ".vim/pack/my-plugins/start/peaksea.vim"]
+	path = .vim/pack/my-plugins/start/peaksea.vim
+	url = https://github.com/calincru/peaksea.vim.git
