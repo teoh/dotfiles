@@ -45,3 +45,11 @@ cd <your-new-plugin>
 dotfiles submodule add $(git config --get remote.origin.url) .
 # commit and push
  ```
+
+# Set up coc.vim
+TODO: fill this in greater detail
+For the base installation of coc-vim, you'll probably want to follow: https://github.com/neoclide/coc.nvim
+For python-specific things, you'll probably want one of:
+* https://github.com/neoclide/coc-python (though this seems deprecated)
+* https://github.com/pappasam/coc-jedi
+* https://github.com/fannheyward/coc-pyright
