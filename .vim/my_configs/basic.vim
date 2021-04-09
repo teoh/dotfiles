@@ -157,7 +157,9 @@ function DarkModeSeoul()
 endfunction
 command! LightModeSeoul call LightModeSeoul()
 command! DarkModeSeoul call DarkModeSeoul()
-call DarkModeSeoul()
+" call DarkModeSeoul()
+packadd! dracula
+colo dracula
 
 " Set extra options when running in GUI mode
 if has("gui_running")

@@ -9,7 +9,7 @@
 " => lightline
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:lightline = {
-      \ 'colorscheme': 'seoul256',
+      \ 'colorscheme': 'dracula',
       \ 'active': {
       \   'left': [ ['mode', 'paste', 'readonly'],
       \             ['branchname'], 
