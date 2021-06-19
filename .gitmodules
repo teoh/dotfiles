@@ -73,3 +73,6 @@
 [submodule ".vim/pack/themes/opt/dracula"]
 	path = .vim/pack/themes/opt/dracula
 	url = https://github.com/dracula/vim.git
+[submodule ".tmux/plugins/tmux-reset"]
+	path = .tmux/plugins/tmux-reset
+	url = https://github.com/hallazzang/tmux-reset.git
