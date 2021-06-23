@@ -9,7 +9,7 @@
 " => lightline
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:lightline = {
-      \ 'colorscheme': 'dracula',
+      \ 'colorscheme': 'darcula',
       \ 'active': {
       \   'left': [ ['mode', 'paste', 'readonly'],
       \             ['branchname'], 
@@ -117,3 +117,12 @@ let g:PyFlakeCheckers = 'flake8'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:sneak#label = 1
 let g:sneak#s_next = 1
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => NerdTree
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" nmap <Leader>nn :NERDTreeToggle<CR>
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>

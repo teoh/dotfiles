@@ -158,8 +158,11 @@ endfunction
 command! LightModeSeoul call LightModeSeoul()
 command! DarkModeSeoul call DarkModeSeoul()
 " call DarkModeSeoul()
-packadd! dracula
-colo dracula
+set termguicolors
+" packadd! dracula
+" colo dracula
+packadd! dark_purple
+colo dark_purple
 
 " Set extra options when running in GUI mode
 if has("gui_running")
@@ -312,7 +315,7 @@ fun! CleanExtraSpaces()
 endfun
 
 if has("autocmd")
-    autocmd BufWritePre *.txt,*.js,*.py,*.wiki,*.sh,*.coffee :call CleanExtraSpaces()
+    autocmd BufWritePre *.txt,*.js,*.py,*.wiki,*.sh,*.coffee,*.gradle :call CleanExtraSpaces()
 endif
 
 

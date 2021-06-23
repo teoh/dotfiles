@@ -76,3 +76,13 @@ autocmd BufRead *.twig set syntax=html filetype=html
 " => Markdown
 """"""""""""""""""""""""""""""
 let vim_markdown_folding_disabled = 1
+
+""""""""""""""""""""""""""""""
+" => Gradle
+""""""""""""""""""""""""""""""
+au BufNewFile,BufRead *.gradle setf groovy
+
+""""""""""""""""""""""""""""""
+" => Quasar
+""""""""""""""""""""""""""""""
+au BufNewFile,BufRead *.quasar setf java
