@@ -79,3 +79,6 @@
 [submodule ".vim/pack/themes/opt/dark_purple"]
 	path = .vim/pack/themes/opt/dark_purple
 	url = https://github.com/shapeoflambda/dark-purple.vim
+[submodule ".vim/pack/my-plugins/start/vim-hocon"]
+	path = .vim/pack/my-plugins/start/vim-hocon
+	url = https://github.com/GEverding/vim-hocon.git
