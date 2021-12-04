@@ -81,6 +81,7 @@ let vim_markdown_folding_disabled = 1
 " => Gradle
 """"""""""""""""""""""""""""""
 au BufNewFile,BufRead *.gradle setf groovy
+au BufNewFile,BufRead *.gradle setlocal shiftwidth=2
 
 """"""""""""""""""""""""""""""
 " => Quasar
