@@ -42,7 +42,8 @@ dotfiles config --local status.showUntrackedFiles no
 cd .vim/pack/my-plugins/start/
 git clone <your-new-plugin>
 cd <your-new-plugin>
-dotfiles submodule add $(git config --get remote.origin.url) .
+cd ~
+dotfiles submodule add $(git -C .vim/pack/my-plugins/start/<your-new-plugin> config --get remote.origin.url) .vim/pack/my-plugins/start/<your-new-plugin>
 # commit and push
  ```
 
