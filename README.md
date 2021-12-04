@@ -52,6 +52,12 @@ dotfiles submodule add $(git -C .vim/pack/my-plugins/start/<your-new-plugin> con
 dotfiles submodule update --recursive --remote
 ```
 
+# Committing and pushing changes
+```
+# usual add-commit workflow
+dotfiles push https://$TOKEN@github.com/teoh/dotfiles.git
+```
+
 # Set up coc.vim
 TODO: fill this in greater detail
 For the base installation of coc-vim, you'll probably want to follow: https://github.com/neoclide/coc.nvim
