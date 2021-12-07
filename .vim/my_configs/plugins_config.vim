@@ -60,6 +60,10 @@ nnoremap <silent> <leader>d :GitGutterToggle<cr>
 map tt :CtrlP<CR>
 map tf :CtrlPClearCache<CR>
 map tb :CtrlPBuffer<CR>
+let g:ctrlp_custom_ignore = {
+    \ 'dir': 'build',
+    \ 'file': '\.job$\|\.flow$'
+    \ }
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Startify
