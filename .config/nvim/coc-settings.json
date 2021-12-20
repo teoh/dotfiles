@@ -1,0 +1,19 @@
+{
+  "java.home":"/usr/lib/jvm/java-11-openjdk-11.0.6.10-1.el7_7.x86_64", // language language server now requires java11
+  "java.import.gradle.version": "5.2.1", // this is to specify which gradle version, this is not working for me yet, need to setup gradle version each time when I run vim
+  "java.import.gradle.wrapper.enabled": false,
+  "java.completion.importOrder":[],
+  "java.errors.incompleteClasspath.severity":"error",
+  "java.progressReports.enabled":true,
+  "java.jdt.ls.home":"/home/mteoh/github/eclipse.jdt.ls", // this is needed to use my local version of java language server, usually this is not needed to be set.
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-1.8",
+      "path": "/usr/java/jdk1.8.0_181-amd64"
+    },
+    {
+      "name": "JavaSE-11",
+      "path": "/usr/lib/jvm/java-11-openjdk-11.0.3.7-0.el7_6.x86_64"
+    }
+  ] // due to LinkedIn is still using java8 and java11 is not ready, so we need to config different runtime java version to make sure our build can work correctly and java language service (coc-java) can work as well.
+}
