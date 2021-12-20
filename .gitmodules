@@ -82,3 +82,6 @@
 [submodule ".vim/pack/my-plugins/start/vim-hocon"]
 	path = .vim/pack/my-plugins/start/vim-hocon
 	url = https://github.com/GEverding/vim-hocon.git
+[submodule ".vim/pack/my-plugins/start/nerdtree"]
+	path = .vim/pack/my-plugins/start/nerdtree
+	url = https://github.com/preservim/nerdtree.git
